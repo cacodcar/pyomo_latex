@@ -62,7 +62,7 @@ def eqn_latex_render(constraint_rule, latex_alias_dict:dict= {}) -> str:
 
 
 def constraint_rule(instance, t):
-    """example constraints
+    """example constraint
     """
     return instance.var1[t] <= instance.var2[t] + instance.var3[t]
 
