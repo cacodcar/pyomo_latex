@@ -13,13 +13,11 @@ __status__ = "Production"
 
 import inspect
 
-
-
-def latex_cons(constraint_rule, latex_alias_dict:dict= {}) -> str:
+def latex_cons(constraint_rule, latex_alias_dict:dict= None) -> str:
     """renders a string for equation in latex format
 
     Args:
-        constraint_rule (function, optional): constraint definition rule. Defaults to {}
+        constraint_rule (function, optional): constraint definition rule. Defaults to None
         latex_alias_dict (dict): aliases for vaiables, sets, and symbols
 
     Returns:
